@@ -1,0 +1,225 @@
+#root {
+  max-width: 1280px;
+
+  padding: 2rem;
+  text-align: center;
+  color: rgb(204, 203, 203);
+}
+
+p {
+  font-size: 9px;
+  margin-top: 5px;
+  margin-left: 5px;
+
+}
+
+h3 {
+  font-size: 15px;
+  height: 10px;
+  color: rgba(27, 27, 27, 0.904);
+  margin-bottom: 10px;
+
+}
+
+input {
+  height: 28px;
+  width: 210px;
+  border-radius: 2px;
+  background-color: rgb(219, 219, 219);
+  border-radius: 2px;
+  border: none;
+  font-size: 11px;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  
+  border-radius: 3px;
+  color: rgb(204, 203, 203);
+ 
+
+}
+.container2 {
+  height: 85vh;
+  width: 455px;
+  border-radius: 3px;
+  color: rgb(204, 203, 203);
+  background-color: rgb(255, 255, 255) ;
+
+}
+
+.fale {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+  padding: 5px;
+
+
+
+  width: auto;
+
+}
+
+.infbase {
+  display: flex;
+  height: 200px;
+  padding: 5px;
+  flex-direction: column;
+
+
+}
+
+.infbase2 {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+
+}
+
+.infbasecontainer {
+  display: flex;
+  margin-top: 15px;
+  gap: 15px;
+}
+
+.infbaseform {
+  height: 130px;
+  width: 215px;
+
+}
+
+.containerinput {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.infbaseimage {
+  display: flex;
+  width: 250px;
+
+  gap: 20px;
+
+}
+
+.infbaseimagebuttons {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+
+  width: 100px;
+ 
+  gap: 15px;
+}
+
+.inputimage {
+  width: 20px;
+  border-radius: 15px;
+}
+.imagemperfil{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 105px;
+
+  border-radius: 5px;
+
+  align-items: end;
+}
+
+.empreende{
+  height: 147px;
+
+}
+.containerinputen {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 5px;
+}
+.emprego{
+  width: 434px;
+  padding: 5px;
+
+}
+
+.infor{
+  height: 147px;
+
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.buttonsnavigate{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  padding: 5px;
+  height: 50px;
+  width: 450px;
+ 
+
+
+
+}
+
+
+
+.fotoperfil {
+  height: 110px;
+  width: 80px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.lapis {
+  height: 15px;
+  width: 15px;
+}
+
+/* Esconde o input de envio de arquivo */
+.inputfile {
+  display: none;
+}
+
+/* Estiliza o botão de upload */
+.upload-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #FFFFFF;
+
+  justify-content: center;
+  gap: 5px;
+  height: 50px;
+  width: 100px;
+  background-color: none;
+  color:#2d6ea1 ;
+  border: none; /* Remove a borda */
+  cursor: pointer; /* Muda o cursor ao passar por cima */
+  font-size: 11px; /* Tamanho do texto */
+
+}
+.pfoto{
+  color: #2d6ea1;
+  font-size: 11px;
+  margin-top: 13px;
+}
+/* Estilo ao passar o mouse */
+
+.bttn{
+  border-radius: 15px;
+  height: 30px;
+  width: 100px;
+  border: none;
+  color: #e7e6e6;
+  background-color: #388CC8;
+  
+}
