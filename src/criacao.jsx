@@ -1,12 +1,13 @@
 // CadastroComponent.jsx
 import React from 'react';
+
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { Container, Row, Col, Button, Form as BootstrapForm } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom'; // Para navegação após cadastro
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
-import './Login.css';
+import './styles/Login.css';
 
 const CadastroComponent = () => {
   const navigate = useNavigate(); // Inicializando o hook de navegação
@@ -27,7 +28,7 @@ const CadastroComponent = () => {
       // Criando uma nova conta com Firebase Authentication
       await createUserWithEmailAndPassword(auth, values.email, values.password);
       // Se o cadastro for bem-sucedido, redireciona para a página de registro de candidatos
-      navigate('/cadastrar');
+      navigate('/');
     } catch (error) {
       console.error('Erro no cadastro:', error.message);
       alert('Falha no cadastro. Verifique suas informações e tente novamente.');
@@ -59,9 +60,12 @@ const CadastroComponent = () => {
                 <Button type="submit" disabled={isSubmitting} className="mt-3">
                   {isSubmitting ? 'Cadastrando...' : 'Cadastrar'}
                 </Button>
+        
               </Form>
+              
             )}
           </Formik>
+         
         </Col>
       </Row>
     </Container>
