@@ -4,9 +4,9 @@ import { getFirestore, doc, getDoc, collection, addDoc } from 'firebase/firestor
 import { app } from './firebaseConfig';
 import "./styles/detalhes.css"
 const DetalhesCandidato = () => {
-  const { id } = useParams(); // Pegando o ID da URL
+  const { id } = useParams(); 
   const [candidato, setCandidato] = useState(null);
-  const [loading, setLoading] = useState(true); // Para gerenciar o carregamento
+  const [loading, setLoading] = useState(true); 
   const [formData, setFormData] = useState({});
   const db = getFirestore(app);
   const navigate = useNavigate();
@@ -14,13 +14,13 @@ const DetalhesCandidato = () => {
   useEffect(() => {
     const fetchCandidato = async () => {
       try {
-        const candidatoDoc = doc(db, 'users', id); // Certifique-se que "users" é o nome correto da coleção
+        const candidatoDoc = doc(db, 'users', id); 
         const candidatoData = await getDoc(candidatoDoc);
 
         if (candidatoData.exists()) {
           const data = candidatoData.data();
           setCandidato(data);
-          setFormData(data); // Preenche os dados no formulário
+          setFormData(data); 
         } else {
           console.error("Candidato não encontrado");
         }
@@ -41,14 +41,14 @@ const DetalhesCandidato = () => {
 
   const handleSaveHistory = async () => {
     try {
-      // Salva uma cópia dos dados no histórico
+
       await addDoc(collection(db, 'users_history'), {
         ...formData,
         originalId: id,
         timestamp: new Date(),
       });
       alert('Alterações salvas no histórico!');
-      navigate(`/detalhes/${id}`); // Redireciona para a página de detalhes novamente
+      navigate(`/detalhes/${id}`); 
     } catch (error) {
       console.error("Erro ao salvar histórico:", error);
     }
@@ -157,7 +157,7 @@ const DetalhesCandidato = () => {
               />
             </div>
 
-            {/* Adicione outros campos conforme necessário */}
+          
 
           </form>
 

@@ -232,11 +232,11 @@ input {
   background-color: none;
   color: #2d6ea1;
   border: none;
-  /* Remove a borda */
+
   cursor: pointer;
-  /* Muda o cursor ao passar por cima */
+
   font-size: 11px;
-  /* Tamanho do texto */
+
 
 }
 
@@ -246,7 +246,6 @@ input {
   margin-top: 13px;
 }
 
-/* Estilo ao passar o mouse */
 
 .bttn {
   border-radius: 3px;

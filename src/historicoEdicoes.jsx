@@ -4,16 +4,16 @@ import { getFirestore, collection, query, where, getDocs } from 'firebase/firest
 import { app } from './firebaseConfig';
 
 const Historico = () => {
-  const { id } = useParams(); // Pegando o ID da URL
+  const { id } = useParams(); 
   const [historico, setHistorico] = useState([]);
-  const [loading, setLoading] = useState(true); // Para gerenciar o carregamento
+  const [loading, setLoading] = useState(true); 
   const db = getFirestore(app);
 
   useEffect(() => {
     const fetchHistorico = async () => {
       try {
-        const historicoRef = collection(db, 'users_history'); // Coleção de histórico
-        const q = query(historicoRef, where('originalId', '==', id)); // Buscar entradas com o originalId igual ao ID do candidato
+        const historicoRef = collection(db, 'users_history'); 
+        const q = query(historicoRef, where('originalId', '==', id));
         const querySnapshot = await getDocs(q);
 
         const historicoData = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));

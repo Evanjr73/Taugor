@@ -2,7 +2,7 @@
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './home'
-// import Login from './login'
+
 import Login from './login'
 import Lista from  './lista'
 import Criacao from './criacao'

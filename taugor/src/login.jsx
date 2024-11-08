@@ -14,7 +14,7 @@ const Login = () => {
     };
 
     const onSubmit = async (e) => {
-        e.preventDefault(); // Previne o reload da página
+        e.preventDefault();
         const auth = getAuth();
         try {
             await signInWithEmailAndPassword(auth, formValues.email, formValues.password);
