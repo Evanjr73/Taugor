@@ -1,11 +1,15 @@
 .containerlogin {
     margin-top: 100px;
-    max-width: 300px;
+    width: 300px;
+    height: 400px;
     padding: 40px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f8f9fa;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .inputt{
+    width: 200px;
   }
   
   .form-login {
@@ -21,5 +25,24 @@
   .text-danger {
     font-size: 0.9rem;
     margin-top: 5px;
+  }
+  
+  .containerlogin {
+    padding: 2rem 1rem;
+  }
+  
+  .form-login {
+    max-width: 100%;
+  }
+  
+  .input-field {
+    width: 100% !important;
+    max-width: 100%;
+    font-size: 1rem; /* Ajuste o tamanho da fonte, se necessário */
+  }
+  
+  .w-100 {
+    width: 500px;
+    width: 100% !important;
   }
   
